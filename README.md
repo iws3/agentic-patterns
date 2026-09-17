@@ -48,7 +48,7 @@ agentic-patterns/
 ## Setup
 
 ```bash
-git clone https://github.com/<your-username>/agentic-patterns.git
+git clone https://github.com/iws3/agentic-patterns.git/
 cd agentic-patterns
 python -m venv venv
 source venv/bin/activate          # Windows: venv\Scripts\activate
