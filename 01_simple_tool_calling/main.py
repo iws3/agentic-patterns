@@ -23,7 +23,7 @@ from shared.tools import calculator
 
 
 def main():
-    model = init_chat_model("gpt-4o-mini", temperature=0)
+    model = init_chat_model("google-genai:gemini-2.5-flash", temperature=0)
     model_with_tools = model.bind_tools([calculator])
 
     user_message = "What is 42 times 17, plus 8?"
