@@ -17,13 +17,17 @@ Run:
 import os
 import sys
 from typing import List, TypedDict
+from dotenv import load_dotenv
+
+
 
 sys.path.append(os.path.join(os.path.dirname(__file__), ".."))
 
 from langchain.chat_models import init_chat_model
 from langgraph.graph import END, StateGraph
+load_dotenv()
 
-model = init_chat_model("gpt-4o-mini", temperature=0)
+model = init_chat_model("google_genai:gemini-2.5-flash", temperature=0)
 
 
 class PlanState(TypedDict):
