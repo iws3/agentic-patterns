@@ -15,7 +15,6 @@ Run:
 
 import os
 import sys
-from dotenv import load_dotenv
 
 sys.path.append(os.path.join(os.path.dirname(__file__), ".."))
 
@@ -23,7 +22,6 @@ from langchain.chat_models import init_chat_model
 from langgraph.prebuilt import create_react_agent
 from shared.tools import calculator, get_weather, web_search
 
-load_dotenv()
 
 SYSTEM_PROMPT = """You are a helpful assistant. Only call a tool when the
 request genuinely needs it. For general knowledge or conversation,
