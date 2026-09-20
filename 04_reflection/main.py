@@ -16,11 +16,13 @@ Run:
 import os
 import sys
 from typing import TypedDict
+from dotenv import load_dotenv
 
 sys.path.append(os.path.join(os.path.dirname(__file__), ".."))
 
 from langchain.chat_models import init_chat_model
 from langgraph.graph import END, StateGraph
+load_dotenv()
 
 model = init_chat_model("gpt-4o-mini", temperature=0)
 
