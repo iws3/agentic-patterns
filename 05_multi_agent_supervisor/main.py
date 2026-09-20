@@ -16,12 +16,14 @@ Run:
 
 import os
 import sys
+from dotenv import load_dotenv
 
 sys.path.append(os.path.join(os.path.dirname(__file__), ".."))
 
 from langchain.chat_models import init_chat_model
 from langgraph.prebuilt import create_react_agent
 from shared.tools import calculator, get_weather, web_search
+load_dotenv()
 
 model = init_chat_model("gpt-4o-mini", temperature=0)
 
