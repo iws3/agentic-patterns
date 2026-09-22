@@ -15,6 +15,7 @@ Run:
 
 import os
 import sys
+import shared
 from typing import TypedDict
 
 sys.path.append(os.path.join(os.path.dirname(__file__), ".."))
